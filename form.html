@@ -11,13 +11,12 @@
 
 <form action="manejador.html" method="post" enctype="multipart/form-data" align="center">
 
-<!-- DATOS DEL CLIENTE -->
 <h3>Datos del cliente</h3>
 Nombre: <input type="text" name="nombre" placeholder="Introduce tu nombre" required><br><br>
 Correo electrónico: <input type="email" name="email" placeholder="ejemplo@gmail.com"><br><br>
 Contraseña: <input type="password" name="clave" placeholder="Contraseña"><br><br>
 
-<!-- PRODUCTO PRINCIPAL -->
+
 <h3>Elige tu proteína favorita</h3>
 <select name="proteina">
   <option value="whey">Proteína Whey (vainilla)</option>
@@ -33,14 +32,13 @@ Tamaño del bote:
 
 Cantidad: <input type="number" name="cantidad" min="1" max="10" value="1"><br><br>
 
-<!-- OTROS SUPLEMENTOS -->
 <h3>Otros suplementos opcionales</h3>
 <input type="checkbox" name="extra1" value="creatina"> Creatina monohidratada<br>
 <input type="checkbox" name="extra2" value="bcaa"> Aminoácidos BCAA<br>
 <input type="checkbox" name="extra3" value="vitaminas"> Vitaminas deportivas<br>
 <input type="checkbox" name="extra4" value="preentreno"> Pre-entreno energético<br><br>
 
-<!-- ENTREGA -->
+
 <h3>Datos de entrega</h3>
 Dirección: <input type="text" name="direccion" size="40"><br><br>
 Código postal: <input type="text" name="cp" maxlength="5"><br><br>
@@ -55,14 +53,13 @@ Provincia:
 
 Fecha de entrega deseada: <input type="date" name="fecha"><br><br>
 
-<!-- DESCUENTO -->
 Descuento exclusivo: <input type="text" name="descuento" value="15%" readonly><br><br>
 
-<!-- ARCHIVO -->
+
 Subir comprobante o justificante del pedido: <br>
 <input type="file" name="fichero" accept="image/*"><br><br>
 
-<!-- BOTONES -->
+
 <input type="submit" value="Enviar pedido">
 <input type="reset" value="Borrar datos">
 <input type="button" value="Salir" onclick="window.close();">
@@ -70,4 +67,5 @@ Subir comprobante o justificante del pedido: <br>
 </form>
 
 </body>
+
 </html>
