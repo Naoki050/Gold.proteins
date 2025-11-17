@@ -13,15 +13,10 @@
     <meta http-equiv="Page-Enter" content="blendTrans(duration=5)">
     <meta http-equiv="Page-Exit" content="revealTrans(duration=2)">
     <title>Gold-protein</title>
-
-    <!-- CSS externo -->
     <link rel="stylesheet" type="text/css" href="Gold-protein.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="imagenes/prote.ico"/>
-
-    <!-- CSS interno -->
     <style type="text/css">
-        /* --------- ESTILOS BÁSICOS --------- */
-        * {
+                * {
             margin: 0;
             padding: 0;
         }
@@ -50,7 +45,7 @@
             padding: 15px;
         }
 
-        /* --------- CABECERA --------- */
+        
         #header {
             padding: 20px 10px;
             background-color: #0d47a1;
@@ -61,7 +56,7 @@
             background-position: right 10px center;
         }
 
-        /* pseudo-elementos en el título principal */
+        
         h1.titulo-principal::before {
             content: "★ ";
         }
@@ -73,14 +68,14 @@
             margin-top: 6px;
         }
 
-        /* Menú de navegación (selector descendente) */
+       
         .nav-links a {
             text-decoration: none;
             margin: 0 8px;
             font-weight: bold;
         }
 
-        /* --------- TABLA --------- */
+       
         table {
             border-collapse: collapse;
             width: 100%;
@@ -99,7 +94,7 @@
             background-color: #fff8e1;
         }
 
-        /* --------- LISTAS DE DEFINICIÓN --------- */
+       
         dl dt {
             font-weight: bold;
             margin-top: 10px;
@@ -109,23 +104,22 @@
             margin-left: 15px;
         }
 
-        /* --------- PSEUDO-CLASES EN ENLACES --------- */
-        a:link    { color: #1565c0; }  /* sin visitar */
-        a:visited { color: #4a148c; }  /* visitado   */
-        a:hover   { color: #ff6f00; }  /* ratón encima */
-        a:active  { color: #b71c1c; }  /* clic        */
+        a:link    { color: #1565c0; }  
+        a:visited { color: #4a148c; }  
+        a:hover   { color: #ff6f00; }  
+        a:active  { color: #b71c1c; }  
 
-        /* Enlaces externos (selector por atributo) */
+        
         a[target="_blank"] {
             text-decoration: underline;
         }
 
-        /* focus en inputs (para el formulario de pedido) */
+       
         input:focus {
             background-color: #fff9c4;
         }
 
-        /* --------- PSEUDO-ELEMENTOS EN INTRO --------- */
+      
         p.texto-intro::first-line {
             font-size: 18px;
         }
@@ -134,26 +128,26 @@
             color: #0d47a1;
         }
 
-        /* --------- MODELO DE CAJAS --------- */
+       
         .caja-info {
             border: 1px dotted #9fa8da;
             padding: 10px;
             margin-top: 10px;
         }
 
-        /* Selector hijo: solo los li directos de la lista principal */
+        
         ol.lista-tipos > li {
             margin-bottom: 6px;
         }
 
-        /* Selector adyacente: texto que va justo después de un h2 */
+       
         h2 + p.descripcion {
             margin-top: 0;
             margin-bottom: 10px;
             color: #455a64;
         }
 
-        /* --------- PIE --------- */
+       
         #footer {
             background-color: #0d47a1;
             color: #ffffff;
@@ -170,7 +164,7 @@
             margin-left: 20px;
         }
 
-        /* Vídeos */
+        
         .videos {
             text-align: center;
         }
@@ -183,9 +177,7 @@
 
 <body>
 
-    <!-- CABECERA -->
     <div id="header">
-        <!-- CSS EN LÍNEA solo para el tamaño (el color va por CSS) -->
         <h1 class="titulo-principal" style="font-size: 40px;">
             <strong>GOLD PROTEINS</strong>
         </h1>
@@ -201,15 +193,12 @@
         </p>
     </div>
 
-    <!-- INTRODUCCIÓN (pseudo-elementos first-line / first-letter) -->
     <div class="bloque">
         <p class="texto-intro">
             Gold Proteins es una tienda especializada en nutrición deportiva. 
             Aquí encontrarás creatina, proteínas, preentrenos, electrolitos, aminoácidos y vitaminas para mejorar tu rendimiento y acelerar tu recuperación después del entrenamiento.
         </p>
     </div>
-
-    <!-- TIPOS DE SUPLEMENTACIÓN -->
     <div class="bloque" id="tipos">
         <h2>Tipos de suplementación</h2>
         <p class="descripcion">
@@ -234,8 +223,6 @@
             <li>Vitaminas</li>
         </ol>
     </div>
-
-    <!-- BOTÓN PEDIDO -->
     <div class="bloque">
         <h2 style="text-align:center;">Haz tu pedido aquí</h2>
         <p style="text-align:center;">
@@ -244,8 +231,6 @@
             </a>
         </p>
     </div>
-
-    <!-- TABLA BENEFICIOS (modelo de cajas, colores) -->
     <div class="bloque">
         <h2 style="text-align:center;">Beneficios principales</h2>
 
@@ -260,8 +245,6 @@
             </tr>
         </table>
     </div>
-
-    <!-- USOS DE PRODUCTOS -->
     <div class="bloque" id="usos">
         <h2>Usos de los productos</h2>
 
@@ -295,8 +278,6 @@
             <dd><strong>Cómo actúan:</strong> cada vitamina tiene su función (C para defensas, D para huesos, B para energía...).</dd>
         </dl>
     </div>
-
-    <!-- VÍDEOS -->
     <div class="bloque videos" id="videos">
         <h2>Vídeos de Gold Proteins</h2>
         <p>Aprende más sobre suplementos deportivos:</p>
@@ -305,7 +286,6 @@
         <iframe width="420" height="236" src="https://www.youtube.com/embed/xdSq9Ocq6Dk?si=xy13yvaqtjlPYyzO" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <!-- FECHA Y HORA (posición fija, esquina) -->
     <p id="fecha" style="position:fixed; bottom:25px; right:20px; font-size:12px;"></p>
     <p id="hora"   style="position:fixed; bottom:10px; right:20px; font-size:12px;"></p>
 
@@ -316,7 +296,6 @@
     </script>
     <script src="hora.js"></script>
 
-    <!-- PIE -->
     <div id="footer">
         <div class="bloque" style="background-color: transparent; border: none; color: inherit;">
             <a href="segundapagina.html">Ir a la página de la empresa</a>
@@ -330,4 +309,5 @@
 
 </body>
 </html>
+
 
