@@ -43,6 +43,7 @@
             background-color: #ffffff;
             border: 1px solid #c5cae9;
             padding: 15px;
+            position: static;
         }
 
         
@@ -55,6 +56,18 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: right 10px center;
+            position: relative;
+        }
+         .badge-oferta {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: rgba(255,255,255,0.85);
+            color: #0d47a1;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
         }
 
         
@@ -148,7 +161,13 @@
             color: #455a64;
         }
 
-       
+       .img-intro {
+            float: right;              
+            width: 160px;
+            margin: 0 0 10px 10px;
+            border: 1px solid #c5cae9;
+        }
+        
         #footer {
             background-color: #0d47a1;
             color: #ffffff;
@@ -166,28 +185,59 @@
         }
 
         
-        .videos {
-            text-align: center;
+       .img-intro {
+                float: right;             
+                width: 180px;
+                margin: 10px;
         }
-        .videos iframe {
-            margin: 8px;
-            border: 2px solid #bbdefb;
+
+         #tipos {
+                clear: both;           
+        }
+
+       
+        }
+
+        .aviso-envio {
+                position: relative;        
+                top: 4px;
+                font-size: 14px;
+                color: #0d47a1;
+        }
+
+         #fecha, #hora {
+                position: fixed;          
+                right: 20px;
+                font-size: 12px;
+        }
+
+         #fecha { bottom: 25px; }
+         #hora  { bottom: 10px; }
+
+         #footer ul li a {
+                display: block;          
+                padding: 4px 0;
         }
     </style>
 </head>
 
 <body>
 
-    <div id="header">
+     <div id="header">
+        <span class="badge-oferta">ENVÍO 24H</span> 
+         
         <h1 class="titulo-principal" style="font-size: 40px;">
             <strong>GOLD PROTEINS</strong>
         </h1>
+         <span class="badge-oferta">ENVÍO 24H</span>
 
         <p class="nav-links">
             <a href="#tipos">Tipos de suplementación</a>
             <a href="#usos">Usos de los productos</a>
             <a href="#videos">Vídeos</a>
         </p>
+         <p class="aviso-envio">Envío gratuito en pedidos superiores a 50€</p>
+
     </div>
 
     <div class="bloque">
@@ -220,6 +270,7 @@
             <li>Vitaminas</li>
         </ol>
     </div>
+    
     <div class="bloque">
         <h2 style="text-align:center;">Haz tu pedido aquí</h2>
         <p style="text-align:center;">
@@ -283,9 +334,9 @@
         <iframe width="420" height="236" src="https://www.youtube.com/embed/xdSq9Ocq6Dk?si=xy13yvaqtjlPYyzO" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <p id="fecha" style="position:fixed; bottom:25px; right:20px; font-size:12px;"></p>
-    <p id="hora"   style="position:fixed; bottom:10px; right:20px; font-size:12px;"></p>
-
+    <p id="fecha"> </p>
+    <p id="hora"> </p>
+    
     <script>
         var hoy = new Date();
         document.getElementById("fecha").innerHTML =
@@ -306,6 +357,7 @@
 
 </body>
 </html>
+
 
 
 
