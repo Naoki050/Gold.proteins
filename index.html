@@ -16,209 +16,194 @@
     <link rel="stylesheet" type="text/css" href="Gold-protein.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="Imagenes/prote.ico"/>
     <style type="text/css">
-                * {
-            margin: 0;
-            padding: 0;
-        }
+              
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #eaf2fb;        /* azul muy clarito */
-            line-height: 1.5;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #eaf2fb;        
+        line-height: 1.5;
+    }
 
-        h2, h3, h4 {
-            color: #0d47a1;
-            margin-bottom: 8px;
-        }
+    h2, h3, h4 {
+        color: #0d47a1;
+        margin-bottom: 8px;
+    }
 
-        p, li, dd, dt {
-            color: #222222;
-        }
+    p, li, dd, dt {
+        color: #222222;
+    }
 
-        .bloque {
-            width: 80%;
-            max-width: 900px;
-            margin: 15px auto;
-            background-color: #ffffff;
-            border: 1px solid #c5cae9;
-            padding: 15px;
-            position: static;
-        }
+    .bloque {
+        width: 80%;
+        max-width: 900px;
+        margin: 15px auto;
+        background-color: #ffffff;
+        border: 1px solid #c5cae9;
+        padding: 15px;
+        position: static;                 
+    }
 
-        
-        #header {
-            padding: 20px 10px;
-            background-color: #0d47a1;
-            color: #ffffff;
-            border-bottom: 4px solid #1565c0;
-            background-image: url("Imagenes/pc.jpg"); /* fondo con imagen */
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: right 10px center;
-            position: relative;
-        }
-         .badge-oferta {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            background-color: rgba(255,255,255,0.85);
-            color: #0d47a1;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
-        }
+    #header {
+        padding: 20px 10px;
+        background-color: #0d47a1;
+        color: #ffffff;
+        border-bottom: 4px solid #1565c0;
+        background-image: url("Imagenes/pc.jpg"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right 10px center;
+        position: relative;            
+      }
 
-        
-        h1.titulo-principal::before {
-            content: "★ ";
-        }
-        h1.titulo-principal::after {
-            content: " ★";
-        }
 
-        #header p {
-            margin-top: 6px;
-        }
+    .badge-oferta {
+        position: absolute;               
+        top: 10px;
+        right: 20px;
+        background-color: rgba(255,255,255,0.85);
+        color: #0d47a1;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+    }
 
-       
-        .nav-links a {
-            text-decoration: none;
-            margin: 0 8px;
-            font-weight: bold;
-        }
+    h1.titulo-principal::before {
+        content: "★ ";
+    }
+    h1.titulo-principal::after {
+        content: " ★";
+    }
 
-       
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+    #header p {
+        margin-top: 6px;
+    }
 
-        td {
-            padding: 10px;
-            border: 1px solid #bbdefb;
-        }
+    .nav-links a {
+        text-decoration: none;
+        margin: 0 8px;
+        font-weight: bold;
+    }
 
-        tr:nth-child(1) td {
-            background-color: #e3f2fd;
-        }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-        tr:nth-child(2) td {
-            background-color: #fff8e1;
-        }
+    td {
+        padding: 10px;
+        border: 1px solid #bbdefb;
+    }
 
-       
-        dl dt {
-            font-weight: bold;
-            margin-top: 10px;
-        }
+    tr:nth-child(1) td {
+        background-color: #e3f2fd;
+    }
 
-        dl dd {
-            margin-left: 15px;
-        }
+    tr:nth-child(2) td {
+        background-color: #fff8e1;
+    }
 
-        a:link    { color: #1565c0; }  
-        a:visited { color: #4a148c; }  
-        a:hover   { color: #ff6f00; }  
-        a:active  { color: #b71c1c; }  
+    dl dt {
+        font-weight: bold;
+        margin-top: 10px;
+    }
 
-        
-        a[target="_blank"] {
-            text-decoration: underline;
-        }
+    dl dd {
+        margin-left: 15px;
+    }
 
-       
-        input:focus {
-            background-color: #fff9c4;
-        }
+    a:link    { color: #1565c0; }  
+    a:visited { color: #4a148c; }  
+    a:hover   { color: #ff6f00; }  
+    a:active  { color: #b71c1c; }  
 
-      
-        p.texto-intro::first-line {
-            font-size: 18px;
-        }
-        p.texto-intro::first-letter {
-            font-size: 2.4em;
-            color: #0d47a1;
-        }
+    a[target="_blank"] {
+        text-decoration: underline;
+    }
 
-       
-        .caja-info {
-            border: 1px dotted #9fa8da;
-            padding: 10px;
-            margin-top: 10px;
-        }
+    input:focus {
+        background-color: #fff9c4;
+    }
 
-        
-        ol.lista-tipos > li {
-            margin-bottom: 6px;
-        }
+    p.texto-intro::first-line {
+        font-size: 18px;
+    }
+    p.texto-intro::first-letter {
+        font-size: 2.4em;
+        color: #0d47a1;
+    }
 
-       
-        h2 + p.descripcion {
-            margin-top: 0;
-            margin-bottom: 10px;
-            color: #455a64;
-        }
+    .caja-info {
+        border: 1px dotted #9fa8da;
+        padding: 10px;
+        margin-top: 10px;
+    }
 
-       .img-intro {
-            float: right;              
-            width: 160px;
-            margin: 0 0 10px 10px;
-            border: 1px solid #c5cae9;
-        }
-        
-        #footer {
-            background-color: #0d47a1;
-            color: #ffffff;
-            padding: 15px;
-            margin-top: 25px;
-        }
+    ol.lista-tipos > li {
+        margin-bottom: 6px;
+    }
 
-        #footer a {
-            color: #bbdefb;
-        }
+    h2 + p.descripcion {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #455a64;
+    }
 
-        #footer ul {
-            margin-top: 8px;
-            margin-left: 20px;
-        }
+  
+    .img-intro {
+        float: right;                     
+        width: 180px;
+        margin: 10px;
+        border: 1px solid #c5cae9;
+    }
 
-        
-       .img-intro {
-                float: right;             
-                width: 180px;
-                margin: 10px;
-        }
+    #tipos {
+        clear: both;                    
+    }
 
-         #tipos {
-                clear: both;           
-        }
+       .aviso-envio {
+        position: relative;                
+        top: 4px;
+        font-size: 14px;
+        color: #0d47a1;
+    }
 
-       
-        }
+    /* FECHA Y HORA FIJAS (fixed) */
+    #fecha, #hora {
+        position: fixed;                  
+        right: 20px;
+        font-size: 12px;
+    }
+    #fecha { bottom: 25px; }
+    #hora  { bottom: 10px; }
 
-        .aviso-envio {
-                position: relative;        
-                top: 4px;
-                font-size: 14px;
-                color: #0d47a1;
-        }
+    /* FOOTER: enlaces como bloque */
+    #footer {
+        background-color: #0d47a1;
+        color: #ffffff;
+        padding: 15px;
+        margin-top: 25px;
+    }
 
-         #fecha, #hora {
-                position: fixed;          
-                right: 20px;
-                font-size: 12px;
-        }
+    #footer a {
+        color: #bbdefb;
+    }
 
-         #fecha { bottom: 25px; }
-         #hora  { bottom: 10px; }
+    #footer ul {
+        margin-top: 8px;
+        margin-left: 20px;
+    }
 
-         #footer ul li a {
-                display: block;          
-                padding: 4px 0;
-        }
-    </style>
+    #footer ul li a {
+        display: block;                 
+        padding: 4px 0;
+    }
+</style>
+
 </head>
 
 <body>
@@ -357,6 +342,7 @@
 
 </body>
 </html>
+
 
 
 
