@@ -1,23 +1,225 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Página de la empresa - Gold Proteins</title>
-</head>
-<body>
-<p><a name="inicio"></a></p>
-<h1>Acerca de Gold Proteins</h1>
-<p>Somos una empresa dedicada a la nutrición deportiva y suplementos de alta calidad...</p>
-<p><a href="#final">Ir al final de la página</a></p>
-<hr>
-<h2>Nuestros objetivos</h2>
-<p>Ofrecer productos con certificación, mejorar el rendimiento deportivo y promover hábitos saludables.</p>
-<h2>Contacto</h2>
-<p>Email: contacto@goldproteins.com</p>
-<p>Teléfono: +34 600 123 456</p>
-<hr>
-<p><a name="final"></a></p>
-<p><a href="#inicio">Volver al inicio</a></p>
-<p><a href="index.html">Volver a la página principal</a></p>
-</body>
+    <meta charset="UTF-8">
+    <title>Página de la empresa - Gold Proteins</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eaf2fb;   
+            line-height: 1.5;
+        }
+
+        h1, h2, h3 {
+            color: #0d47a1;             
+            margin-bottom: 8px;
+        }
+
+        p, li, dd, dt {
+            color: #222222;
+        }
+
+        .bloque {
+            width: 80%;
+            max-width: 900px;
+            margin: 15px auto;
+            background-color: #ffffff;
+            border: 1px solid #c5cae9;
+            padding: 15px;
+        }
+
+        #header {
+            padding: 20px 10px;
+            background-color: #0d47a1;
+            color: #ffffff;
+            border-bottom: 4px solid #1565c0;
+            background-image: url("Imagenes/footo.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1.titulo-principal::before {
+            content: "★ ";
+        }
+        h1.titulo-principal::after {
+            content: " ★";
+        }
+
+        /* Menú sencillo dentro de la cabecera */
+        .nav-links {
+            margin-top: 8px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        a:link    { color: #1565c0; }
+        a:visited { color: #4a148c; }
+        a:hover   { color: #ff6f00; }
+        a:active  { color: #b71c1c; }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        dl dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        dl dd {
+            margin-left: 15px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #bbdefb;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e3f2fd;
+        }
+
+        #footer {
+            background-color: #0d47a1;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        #footer a {
+            color: #bbdefb;
+        }
+
+        #footer ul {
+            margin-top: 8px;
+            margin-left: 20px;
+        }
+
+        #footer ul li a {
+            display: block;
+            padding: 4px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <a name="inicio"></a>
+
+    <div id="header">
+        <h1 class="titulo-principal">GOLD PROTEINS</h1>
+        <p class="nav-links">
+            <a href="index.html">Página principal</a>
+            <a href="#empresa">La empresa</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#contacto">Contacto</a>
+        </p>
+    </div>
+
+    <div class="bloque" id="empresa">
+        <h2>Acerca de Gold Proteins</h2>
+        <p>
+            Gold Proteins es una empresa dedicada a la nutrición deportiva y a la venta de suplementos de alta calidad.
+            Trabajamos con productos testados y formulados para ayudar a deportistas, aficionados al gimnasio y personas
+            activas que quieren cuidar su salud.
+        </p>
+        <p>
+            Nuestro objetivo es ofrecer suplementos claros, sin engaños y con una relación calidad-precio competitiva.
+        </p>
+
+        <h3>¿Qué nos diferencia?</h3>
+        <ul>
+            <li>Productos con certificados de calidad y trazabilidad.</li>
+            <li>Asesoramiento básico para principiantes en suplementación.</li>
+            <li>Variedad de sabores, formatos y tipos de proteína.</li>
+            <li>Envíos rápidos dentro de la península.</li>
+        </ul>
+    </div>
+  
+    <div class="bloque" id="objetivos">
+        <h2>Nuestros objetivos</h2>
+        <p>
+            En Gold Proteins trabajamos con tres objetivos principales:
+        </p>
+
+        <dl>
+            <dt>1. Calidad</dt>
+            <dd>Seleccionar suplementos con ingredientes fiables y fórmulas equilibradas.</dd>
+
+            <dt>2. Rendimiento</dt>
+            <dd>Ayudar a mejorar la fuerza, la recuperación y la energía durante el entrenamiento.</dd>
+
+            <dt>3. Hábitos saludables</dt>
+            <dd>Complementar la alimentación, nunca sustituirla, y animar a mantener una vida activa.</dd>
+        </dl>
+    </div>
+    <div class="bloque">
+        <h2>Horario y ubicación</h2>
+        <p>Nos puedes encontrar en nuestra tienda física en Madrid (zona Vallecas).</p>
+
+        <table>
+            <tr>
+                <th>Día</th>
+                <th>Mañana</th>
+                <th>Tarde</th>
+            </tr>
+            <tr>
+                <td>Lunes a Viernes</td>
+                <td>10:00 – 14:00</td>
+                <td>16:30 – 20:30</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>10:00 – 14:00</td>
+                <td>Cerrado</td>
+            </tr>
+            <tr>
+                <td>Domingo y festivos</td>
+                <td colspan="2">Cerrado</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bloque" id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes dudas sobre qué suplemento elegir o sobre un pedido, puedes escribirnos o llamarnos:</p>
+        <p><strong>Email:</strong> contacto@goldproteins.com</p>
+        <p><strong>Teléfono:</strong> +34 600 123 456</p>
+
+        <h3>Redes sociales</h3>
+        <ul>
+            <li>Instagram: @goldproteins</li>
+            <li>TikTok: @goldproteins_oficial</li>
+        </ul>
+
+        <p><a href="#inicio">Volver al inicio de la página</a></p>
+        <p><a href="index.html">Volver a la página principal</a></p>
+    </div>
+
+    <div id="footer">
+        <div class="bloque" style="background-color: transparent; border: none; color: inherit;">
+            <h3>Gold Proteins &copy; 2025</h3>
+            <ul>
+                <li><a href="index.html">Tienda y suplementos</a></li>
+                <li><a href="#contacto">Formulario de contacto (por email)</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
 </html>
