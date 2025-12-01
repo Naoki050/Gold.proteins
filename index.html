@@ -15,214 +15,225 @@
     <title>Gold-protein</title>
     <link rel="stylesheet" type="text/css" href="Gold-protein.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="Imagenes/prote.ico"/>
-   <style type="text/css">
-* {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eaf2fb;        
-    line-height: 1.5;
-}
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-h2, h3, h4 {
-    color: #0d47a1;
-    margin-bottom: 8px;
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #eaf2fb;        
+        line-height: 1.5;
+    }
 
-p, li, dd, dt {
-    color: #222222;
-}
+    h2, h3, h4 {
+        color: #0d47a1;
+        margin-bottom: 8px;
+    }
 
-.bloque {
-    width: 80%;
-    max-width: 900px;
-    margin: 15px auto;
-    background-color: #ffffff;
-    border: 1px solid #c5cae9;
-    padding: 15px;
-    position: static;                 
-}
+    p, li, dd, dt {
+        color: #222222;
+    }
 
-#header {
-    padding: 20px 10px;
-    background-color: #0d47a1;
-    color: #ffffff;
-    border-bottom: 4px solid #1565c0;
-    background-image: url("Imagenes/footo.png"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 10px center;
-    position: relative;            
-}
+    .bloque {
+        width: 80%;
+        max-width: 900px;
+        margin: 15px auto;
+        background-color: #ffffff;
+        border: 1px solid #c5cae9;
+        padding: 15px;
+        position: static;                 
+    }
 
-.badge-oferta {
-    position: absolute;               
-    top: 10px;
-    right: 20px;
-    background-color: rgba(255,255,255,0.85);
-    color: #0d47a1;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: bold;
-}  /* ESTA LLAVE FALTABA */
+    #header {
+        padding: 20px 10px;
+        background-color: #0d47a1;
+        color: #ffffff;
+        border-bottom: 4px solid #1565c0;
+        background-image: url("Imagenes/footo.png"); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right 10px center;
+        position: relative;            
+    }
 
-#header p {
-    margin-top: 6px;
-}
+    .badge-oferta {
+        position: absolute;               
+        top: 10px;
+        right: 20px;
+        background-color: rgba(255,255,255,0.85);
+        color: #0d47a1;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+    }
 
-.nav-links a {
-    text-decoration: none;
-    margin: 0 8px;
-    font-weight: bold;
-}
+    #header p {
+        margin-top: 6px;
+    }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
+    .nav-links a {
+        text-decoration: none;
+        margin: 0 8px;
+        font-weight: bold;
+        color: #bbdefb;
+    }
 
-td {
-    padding: 10px;
-    border: 1px solid #bbdefb;
-}
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
 
-dl dt {
-    font-weight: bold;
-    margin-top: 10px;
-}
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-dl dd {
-    margin-left: 15px;
-}
+    td {
+        padding: 10px;
+        border: 1px solid #bbdefb;
+    }
 
-a:link    { color: #1565c0; }  
-a:visited { color: #4a148c; }  
-a:hover   { color: #ff6f00; }  
-a:active  { color: #b71c1c; }  
+    dl dt {
+        font-weight: bold;
+        margin-top: 10px;
+    }
 
-a[target="_blank"] {
-    text-decoration: underline;
-}
+    dl dd {
+        margin-left: 15px;
+    }
 
-input:focus {
-    background-color: #fff9c4;
-}
+    a:link    { color: #1565c0; }  
+    a:visited { color: #4a148c; }  
+    a:hover   { color: #ff6f00; }  
+    a:active  { color: #b71c1c; }  
 
-p.texto-intro::first-line {
-    font-size: 18px;
-}
+    a[target="_blank"] {
+        text-decoration: underline;
+    }
 
-.caja-info {
-    border: 1px dotted #9fa8da;
-    padding: 10px;
-    margin-top: 10px;
-}
+    input:focus {
+        background-color: #fff9c4;
+    }
 
-ol.lista-tipos > li {
-    margin-bottom: 6px;
-}
+    p.texto-intro::first-line {
+        font-size: 18px;
+    }
 
-h2 + p.descripcion {
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #455a64;
-}
+    .caja-info {
+        border: 1px dotted #9fa8da;
+        padding: 10px;
+        margin-top: 10px;
+    }
 
-.img-intro {
-    float: right;                     
-    width: 180px;
-    margin: 10px;
-    border: 1px solid #c5cae9;
-}
+    ol.lista-tipos > li {
+        margin-bottom: 6px;
+    }
 
-#tipos {
-    clear: both;                    
-}
+    h2 + p.descripcion {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #455a64;
+    }
 
-.aviso-envio {
-    position: relative;                
-    top: 4px;
-    font-size: 14px;
-    color: #0d47a1;
-}
+    .img-intro {
+        float: right;                     
+        width: 180px;
+        margin: 10px;
+        border: 1px solid #c5cae9;
+    }
 
-#fecha, #hora {
-    position: fixed;                  
-    right: 20px;
-    font-size: 12px;
-}
-#fecha { bottom: 25px; }
-#hora  { bottom: 10px; }
+    #tipos {
+        clear: both;                    
+    }
 
-#footer {
-    background-color: #0d47a1;
-    color: #ffffff;
-    padding: 15px;
-    margin-top: 25px;
-}
+    .aviso-envio {
+        position: relative;                
+        top: 4px;
+        font-size: 14px;
+        color: #bbdefb;
+    }
 
-#footer a {
-    color: #bbdefb;
-}
+    #fecha, #hora {
+        position: fixed;                  
+        right: 20px;
+        font-size: 12px;
+    }
+    #fecha { bottom: 25px; }
+    #hora  { bottom: 10px; }
 
-#footer ul {
-    margin-top: 8px;
-    margin-left: 20px;
-}
+    #footer {
+        background-color: #0d47a1;
+        color: #ffffff;
+        padding: 15px;
+        margin-top: 25px;
+    }
 
-#footer ul li a {
-    display: block;                 
-    padding: 4px 0;
-}
+    #footer a {
+        color: #bbdefb;
+    }
 
-/* === MENÚ HORIZONTAL ESTILO LIBRO, PERO BÁSICO === */
+    #footer ul {
+        margin-top: 8px;
+        margin-left: 20px;
+    }
 
-#menu_h {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0 15px 0;
-}
+    #footer ul li a {
+        display: block;                 
+        padding: 4px 0;
+    }
 
-#menu_h ul {
-    list-style-type: none;   /* sin viñetas */
-    padding: 0;
-    margin: 0;
-    display: inline-block;   /* para poder centrarlo */
-}
+    /* === MENÚ HORIZONTAL BÁSICO === */
 
-#menu_h li {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
+    #menu_h {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 15px 0;
+    }
 
-#menu_h a {
-    display: inline-block;
-    margin: 1px;
-    padding: 5px 10px;
-    background-color: #ccc;      /* gris tipo libro */
-    border-top-right-radius: 8px;
-    border: 1px solid #000;
-    color: #000;
-    text-decoration: none;
-    font: bold 14px Courier;     /* letra de máquina como el libro */
-}
+    #menu_h ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
 
-#menu_h a:hover {
-    color: #fff;
-    background-color: #999;
-    text-decoration: underline;
-}
-</style>
+    #menu_h li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu_h a {
+        display: inline-block;
+        margin: 1px;
+        padding: 5px 10px;
+        background-color: #ccc;
+        border-top-right-radius: 8px;
+        border: 1px solid #000;
+        color: #000;
+        text-decoration: none;
+        font: bold 14px Courier;
+    }
+
+    #menu_h a:hover {
+        color: #fff;
+        background-color: #999;
+        text-decoration: underline;
+    }
+
+    .videos iframe {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    </style>
 </head>
 
 <body>
    
-<h2>Menú Principal</h2>
+<h2 style="text-align:center; margin-top:10px;">Menú Principal</h2>
 
 <div id="menu_h">
     <ul>
@@ -232,163 +243,187 @@ h2 + p.descripcion {
     </ul>
 </div>
 
-
 <div id="header">
     <span class="badge-oferta">ENVÍO 24H</span> 
     <h1 class="titulo-principal" style="font-size: 40px;">
         <strong>GOLD PROTEINS</strong>
     </h1>
 
+    <p class="nav-links">
+        <a href="#tipos">Tipos de suplementación</a>
+        <a href="#usos">Usos</a>
+        <a href="#videos">Vídeos</a>
+    </p>
+
     <p class="aviso-envio">Envío gratuito en pedidos superiores a 50€</p>
-       <h2>Menú Principal</h2>
-    
 </div>
 
-    <div class="bloque">
-        <p class="texto-intro">
-            Gold Proteins es una tienda especializada en nutrición deportiva. 
-            Aquí encontrarás creatina, proteínas, preentrenos, electrolitos, aminoácidos y vitaminas para mejorar tu rendimiento y acelerar tu recuperación después del entrenamiento.
-        </p>
-    </div>
-    <div class="bloque" id="tipos">
-        <h2>Tipos de suplementación</h2>
-        <p class="descripcion">
-            Estos son los suplementos principales que ofrecemos en nuestra tienda:
-        </p>
+<div class="bloque">
+    <p class="texto-intro">
+        Gold Proteins es una tienda especializada en nutrición deportiva. 
+        Aquí encontrarás creatina, proteínas, preentrenos, electrolitos, aminoácidos y vitaminas para mejorar tu rendimiento y acelerar tu recuperación después del entrenamiento.
+        Trabajamos con marcas conocidas del mundo del fitness y ofrecemos opciones tanto para personas que empiezan en el gimnasio como para deportistas que entrenan a diario.
+        Nuestro objetivo es que puedas completar tu dieta de forma sencilla y con explicaciones claras.
+    </p>
+</div>
 
-        <ol class="lista-tipos caja-info">
-            <li>Creatina
-                <ul><li>Sabores</li></ul>
-            </li>
-            <li>Proteína
-                <ul><li>Tipos (suero, caseína, vegetal...)</li></ul>
-            </li>
-            <li>Pre entreno
-                <ul><li>Cantidad de energía</li></ul>
-            </li>
-            <li>Post entreno
-                <ul><li>Cantidad de carbohidratos</li></ul>
-            </li>
-            <li>Electrolitos</li>
-            <li>Aminoácidos</li>
-            <li>Vitaminas</li>
-        </ol>
-    </div>
+<div class="bloque" id="tipos">
+    <h2>Tipos de suplementación</h2>
+    <p class="descripcion">
+        Estos son los suplementos principales que ofrecemos en nuestra tienda:
+    </p>
+
+    <ol class="lista-tipos caja-info">
+        <li>Creatina
+            <ul><li>Sabores neutro, limón y frutas.</li></ul>
+        </li>
+        <li>Proteína
+            <ul><li>Tipos: suero, caseína, vegetal (soja, guisante...).</li></ul>
+        </li>
+        <li>Pre entreno
+            <ul><li>Con distintos niveles de cafeína y energía.</li></ul>
+        </li>
+        <li>Post entreno
+            <ul><li>Combinaciones de carbohidratos y proteína.</li></ul>
+        </li>
+        <li>Electrolitos
+            <ul><li>Sales minerales para hidratarte mejor.</li></ul>
+        </li>
+        <li>Aminoácidos
+            <ul><li>BCAA y EAA en polvo o cápsulas.</li></ul>
+        </li>
+        <li>Vitaminas
+            <ul><li>Multivitamínicos diarios y específicos.</li></ul>
+        </li>
+    </ol>
+</div>
     
-    <div class="bloque">
-        <h2 style="text-align:center;">Haz tu pedido aquí</h2>
-        <p style="text-align:center;">
-            <a href="form.html">
-                <button>Ir al formulario de pedido</button>
-            </a>
-        </p>
-    </div>
-    <div class="bloque">
-        <h2 style="text-align:center;">Beneficios principales</h2>
+<div class="bloque">
+    <h2 style="text-align:center;">Haz tu pedido aquí</h2>
+    <p style="text-align:center;">
+        Desde nuestro formulario puedes elegir el tipo de proteína, el tamaño del bote,
+        la cantidad y otros suplementos opcionales como creatina, BCAA o vitaminas.
+    </p>
+    <p style="text-align:center; margin-top:10px;">
+        <a href="form.html">
+            <button>Ir al formulario de pedido</button>
+        </a>
+    </p>
+</div>
 
-        <table>
-            <tr>
-                <td><strong>Creatina</strong></td>
-                <td>Aumenta la fuerza y la potencia</td>
-            </tr>
-            <tr>
-                <td><strong>Proteína</strong></td>
-                <td>Ayuda a regenerar el músculo</td>
-            </tr>
-        </table>
-    </div>
-    <div class="bloque" id="usos">
-        <h2>Usos de los productos</h2>
+<div class="bloque">
+    <h2 style="text-align:center;">Beneficios principales</h2>
 
-        <dl class="caja-info">
-            <dt>Creatina</dt>
-            <dd><strong>Para qué sirve:</strong> aumenta la fuerza, la potencia y el rendimiento en entrenamientos intensos.</dd>
-            <dd><strong>Cómo actúa:</strong> recarga la energía (ATP) en los músculos más rápido.</dd><br>
+    <table>
+        <tr>
+            <td><strong>Creatina</strong></td>
+            <td>Aumenta la fuerza y la potencia en entrenamientos cortos e intensos.</td>
+        </tr>
+        <tr>
+            <td><strong>Proteína</strong></td>
+            <td>Ayuda a regenerar el músculo después del ejercicio.</td>
+        </tr>
+        <tr>
+            <td><strong>Preentreno</strong></td>
+            <td>Mejora la energía y la concentración antes de entrenar.</td>
+        </tr>
+        <tr>
+            <td><strong>Electrolitos</strong></td>
+            <td>Ayudan a mantener una buena hidratación y evitan calambres.</td>
+        </tr>
+        <tr>
+            <td><strong>Vitaminas</strong></td>
+            <td>Apoyan el sistema inmunológico y el metabolismo energético.</td>
+        </tr>
+    </table>
+</div>
 
-            <dt>Proteína</dt>
-            <dd><strong>Para qué sirve:</strong> ayuda a reparar y construir el tejido muscular después del entrenamiento.</dd>
-            <dd><strong>Cómo actúa:</strong> aporta aminoácidos que el cuerpo usa para regenerar el músculo dañado.</dd><br>
+<div class="bloque" id="usos">
+    <h2>Usos de los productos</h2>
 
-            <dt>Preentreno</dt>
-            <dd><strong>Para qué sirve:</strong> mejora la energía, el enfoque y el rendimiento justo antes de entrenar.</dd>
-            <dd><strong>Cómo actúa:</strong> suele tener cafeína, beta-alanina y otros estimulantes que aumentan la concentración y retrasan la fatiga.</dd><br>
+    <dl class="caja-info">
+        <dt>Creatina</dt>
+        <dd><strong>Para qué sirve:</strong> aumenta la fuerza, la potencia y el rendimiento en entrenamientos intensos.</dd>
+        <dd><strong>Cómo actúa:</strong> recarga la energía (ATP) en los músculos más rápido.</dd><br>
 
-            <dt>Post-entreno</dt>
-            <dd><strong>Para qué sirve:</strong> acelera la recuperación después del ejercicio.</dd>
-            <dd><strong>Cómo actúa:</strong> repone los nutrientes y la energía (carbohidratos + proteínas) perdidos durante el entrenamiento.</dd><br>
+        <dt>Proteína</dt>
+        <dd><strong>Para qué sirve:</strong> ayuda a reparar y construir el tejido muscular después del entrenamiento.</dd>
+        <dd><strong>Cómo actúa:</strong> aporta aminoácidos que el cuerpo usa para regenerar el músculo dañado.</dd><br>
 
-            <dt>Electrolitos</dt>
-            <dd><strong>Para qué sirven:</strong> mantienen el equilibrio de agua y sales minerales en el cuerpo.</dd>
-            <dd><strong>Cómo actúan:</strong> evitan calambres, deshidratación y pérdida de rendimiento por sudor.</dd><br>
+        <dt>Preentreno</dt>
+        <dd><strong>Para qué sirve:</strong> mejora la energía, el enfoque y el rendimiento justo antes de entrenar.</dd>
+        <dd><strong>Cómo actúa:</strong> suele tener cafeína, beta-alanina y otros estimulantes que aumentan la concentración y retrasan la fatiga.</dd><br>
 
-            <dt>Aminoácidos (BCAA o EAA)</dt>
-            <dd><strong>Para qué sirven:</strong> evitan la degradación muscular y ayudan en la recuperación.</dd>
-            <dd><strong>Cómo actúan:</strong> son los “bloques” que forman las proteínas y alimentan directamente al músculo.</dd><br>
+        <dt>Post-entreno</dt>
+        <dd><strong>Para qué sirve:</strong> acelera la recuperación después del ejercicio.</dd>
+        <dd><strong>Cómo actúa:</strong> repone los nutrientes y la energía (carbohidratos + proteínas) perdidos durante el entrenamiento.</dd><br>
 
-            <dt>Vitaminas</dt>
-            <dd><strong>Para qué sirven:</strong> regulan procesos vitales del cuerpo y mejoran el sistema inmunológico.</dd>
-            <dd><strong>Cómo actúan:</strong> cada vitamina tiene su función (C para defensas, D para huesos, B para energía...).</dd>
-        </dl>
-    </div>
-    <div class="bloque videos" id="videos">
-        <h2>Vídeos de Gold Proteins</h2>
-        <p>Aprende más sobre suplementos deportivos:</p>
+        <dt>Electrolitos</dt>
+        <dd><strong>Para qué sirven:</strong> mantienen el equilibrio de agua y sales minerales en el cuerpo.</dd>
+        <dd><strong>Cómo actúan:</strong> evitan calambres, deshidratación y pérdida de rendimiento por sudor.</dd><br>
 
-        <iframe width="420" height="236" src="https://www.youtube.com/embed/74Ynzsr9o3o?si=I0nQHFM9nlmcrxUG" frameborder="0" allowfullscreen></iframe>
-        <iframe width="420" height="236" src="https://www.youtube.com/embed/xdSq9Ocq6Dk?si=xy13yvaqtjlPYyzO" frameborder="0" allowfullscreen></iframe>
-    </div>
+        <dt>Aminoácidos (BCAA o EAA)</dt>
+        <dd><strong>Para qué sirven:</strong> evitan la degradación muscular y ayudan en la recuperación.</dd>
+        <dd><strong>Cómo actúan:</strong> son los “bloques” que forman las proteínas y alimentan directamente al músculo.</dd><br>
 
-    <p id="fecha"> </p>
-    <p id="hora"> </p>
+        <dt>Vitaminas</dt>
+        <dd><strong>Para qué sirven:</strong> regulan procesos vitales del cuerpo y mejoran el sistema inmunológico.</dd>
+        <dd><strong>Cómo actúan:</strong> cada vitamina tiene su función (C para defensas, D para huesos, B para energía...).</dd>
+    </dl>
+</div>
+
+<div class="bloque">
+    <h2>¿Por qué elegir Gold Proteins?</h2>
+    <ul>
+        <li>Asesoramiento básico para personas que empiezan en el gimnasio.</li>
+        <li>Productos pensados para combinar con una dieta equilibrada.</li>
+        <li>Opciones sin lactosa y alternativas vegetales.</li>
+        <li>Ofertas periódicas en botes grandes y packs ahorro.</li>
+    </ul>
+</div>
+
+<div class="bloque">
+    <h2>Consejos básicos de uso</h2>
+    <p>
+        Antes de tomar suplementos es importante leer bien la etiqueta, respetar las dosis 
+        indicadas y beber suficiente agua durante el día. Los suplementos no sustituyen a 
+        una buena alimentación ni al descanso, solo son una ayuda extra.
+    </p>
+    <ul>
+        <li>No tomes más cantidad de la recomendada esperando “resultados más rápidos”.</li>
+        <li>Combina los suplementos con ejercicio regular y hábitos saludables.</li>
+        <li>Si tienes alguna enfermedad, consulta con un profesional de la salud.</li>
+    </ul>
+</div>
+
+<div class="bloque videos" id="videos">
+    <h2>Vídeos de Gold Proteins</h2>
+    <p>Aprende más sobre suplementos deportivos:</p>
+
+    <iframe width="420" height="236" src="https://www.youtube.com/embed/74Ynzsr9o3o?si=I0nQHFM9nlmcrxUG" frameborder="0" allowfullscreen></iframe>
+    <iframe width="420" height="236" src="https://www.youtube.com/embed/xdSq9Ocq6Dk?si=xy13yvaqtjlPYyzO" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p id="fecha"></p>
+<p id="hora"></p>
     
-    <script>
-        var hoy = new Date();
-        document.getElementById("fecha").innerHTML =
-            "FECHA: " + hoy.getDate() + "/" + (hoy.getMonth() + 1) + "/" + hoy.getFullYear();
-    </script>
-    <script src="hora.js"></script>
+<script>
+    var hoy = new Date();
+    document.getElementById("fecha").innerHTML =
+        "FECHA: " + hoy.getDate() + "/" + (hoy.getMonth() + 1) + "/" + hoy.getFullYear();
+</script>
+<script src="hora.js"></script>
 
-    <div id="footer">
-        <div class="bloque" style="background-color: transparent; border: none; color: inherit;">
-            <a href="segundapagina.html">Ir a la página de la empresa</a>
-            <h2>Enlaces externos relacionados con Gold Proteins</h2>
-            <ul>
-                <li><a href="https://www.myprotein.es" target="_blank">MyProtein - Suplementos deportivos</a></li>
-                <li><a href="https://www.prozis.com/es/es" target="_blank">Prozis - Nutrición y fitness</a></li>
-            </ul>
-        </div>
+<div id="footer">
+    <div class="bloque" style="background-color: transparent; border: none; color: inherit;">
+        <a href="segundapagina.html">Ir a la página de la empresa</a>
+        <h2>Enlaces externos relacionados con Gold Proteins</h2>
+        <ul>
+            <li><a href="https://www.myprotein.es" target="_blank">MyProtein - Suplementos deportivos</a></li>
+            <li><a href="https://www.prozis.com/es/es" target="_blank">Prozis - Nutrición y fitness</a></li>
+        </ul>
     </div>
+</div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
