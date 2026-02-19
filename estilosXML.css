@@ -1,0 +1,88 @@
+goldproteins{
+  display:block;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#eaf2fb;
+  padding:20px;
+  color:#222;
+}
+
+/* “Cabeceras” visuales sencillas */
+menu, empresa, contacto, productos, clientes, pedidos, horario{
+  display:block;
+  background:#ffffff;
+  border:1px solid #c5cae9;
+  padding:15px;
+  margin-bottom:16px;
+  border-radius:10px;
+}
+
+/* menú en línea (tipo tu web) */
+menu{
+  text-align:center;
+}
+item{
+  display:inline-block;
+  border:1px solid #c5cae9;
+  padding:8px 12px;
+  margin:4px;
+  border-radius:8px;
+  background:#f5f9ff;
+}
+texto{
+  display:block;
+  font-weight:bold;
+  color:#0d47a1;
+}
+url{
+  display:block;
+  font-size:12px;
+  color:#1565c0;
+}
+
+/* títulos dentro de secciones */
+empresa > nombre{
+  display:block;
+  font-size:26px;
+  font-weight:bold;
+  color:#0d47a1;
+  text-align:center;
+  margin-bottom:6px;
+}
+slogan{
+  display:block;
+  text-align:center;
+  color:#1565c0;
+  margin-top:6px;
+}
+
+/* cajas internas */
+producto, cliente, pedido, dia{
+  display:block;
+  border:1px solid #bbdefb;
+  background:#f5f9ff;
+  padding:10px;
+  margin-top:10px;
+  border-radius:8px;
+}
+
+/* texto “normal” */
+fundacion, ciudad, zona, cp, email, telefono, instagram, tiktok,
+precio, stock, fecha, clienteID, productoID, cantidad, total,
+calle, numero, manana, tarde{
+  display:block;
+  margin-top:4px;
+  margin-left:10px;
+}
+
+/* lineas de pedido */
+lineas{
+  display:block;
+  margin-top:8px;
+  padding-left:10px;
+}
+linea{
+  display:block;
+  margin-top:6px;
+  padding:6px;
+  border-left:4px solid #1565c0;
+}
