@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilosXML.css"?>
+
+<goldproteins>
+
+    <empresa>
+        <nombre>Gold Proteins</nombre>
+        <fundacion>2025</fundacion>
+        <ubicacion>
+            <ciudad>Madrid</ciudad>
+            <zona>Vallecas</zona>
+        </ubicacion>
+        <slogan>Envío gratuito en pedidos superiores a 50€</slogan>
+    </empresa>
+
+    <contacto>
+        <email>contacto@goldproteins.com</email>
+        <telefono>+34 600 123 456</telefono>
+        <redes>
+            <instagram>@goldproteins</instagram>
+            <tiktok>@goldproteins_oficial</tiktok>
+        </redes>
+    </contacto>
+
+    <productos>
+        <producto id="P01" categoria="proteina">
+            <nombre>Proteína Whey</nombre>
+            <precio moneda="EUR">29.99</precio>
+            <stock>50</stock>
+        </producto>
+
+        <producto id="P02" categoria="creatina">
+            <nombre>Creatina Monohidratada</nombre>
+            <precio moneda="EUR">19.99</precio>
+            <stock>35</stock>
+        </producto>
+
+        <producto id="P03" categoria="vitaminas">
+            <nombre>Multivitamínico Deportivo</nombre>
+            <precio moneda="EUR">14.99</precio>
+            <stock>20</stock>
+        </producto>
+
+        <producto id="P04" categoria="aminoacidos">
+            <nombre>BCAA</nombre>
+            <precio moneda="EUR">17.50</precio>
+            <stock>40</stock>
+        </producto>
+
+        <producto id="P05" categoria="preentreno">
+            <nombre>Pre-entreno</nombre>
+            <precio moneda="EUR">22.90</precio>
+            <stock>15</stock>
+        </producto>
+    </productos>
+
+    <clientes>
+        <cliente id="C001">
+            <nombre>Juan Pérez</nombre>
+            <email>juanperez@email.com</email>
+            <ciudad>Madrid</ciudad>
+            <cp>28031</cp>
+        </cliente>
+
+        <cliente id="C002">
+            <nombre>Ana López</nombre>
+            <email>ana.lopez@email.com</email>
+            <ciudad>Valencia</ciudad>
+            <cp>46001</cp>
+        </cliente>
+
+        <cliente id="C003">
+            <nombre>Marcos Sánchez</nombre>
+            <email>marcos.sanchez@email.com</email>
+            <ciudad>Barcelona</ciudad>
+            <cp>08010</cp>
+        </cliente>
+
+        <cliente id="C004">
+            <nombre>Lucía Gómez</nombre>
+            <email>lucia.gomez@email.com</email>
+            <ciudad>Sevilla</ciudad>
+            <cp>41001</cp>
+        </cliente>
+
+        <cliente id="C005">
+            <nombre>David Romero</nombre>
+            <email>david.romero@email.com</email>
+            <ciudad>Madrid</ciudad>
+            <cp>28001</cp>
+        </cliente>
+
+        <cliente id="C006">
+            <nombre>Paula Martín</nombre>
+            <email>paula.martin@email.com</email>
+            <ciudad>Toledo</ciudad>
+            <cp>45001</cp>
+        </cliente>
+    </clientes>
+
+    <pedidos>
+        <pedido numero="001" estado="En preparación">
+            <fecha>2025-09-15</fecha>
+            <clienteID>C001</clienteID>
+            <direccion>
+                <calle>Avenida Albufera</calle>
+                <numero>120</numero>
+                <ciudad>Madrid</ciudad>
+                <cp>28031</cp>
+            </direccion>
+            <lineas>
+                <linea>
+                    <productoID>P01</productoID>
+                    <cantidad>2</cantidad>
+                </linea>
+                <linea>
+                    <productoID>P02</productoID>
+                    <cantidad>1</cantidad>
+                </linea>
+            </lineas>
+        </pedido>
+
+        <pedido numero="002" estado="Enviado">
+            <fecha>2025-09-18</fecha>
+            <clienteID>C002</clienteID>
+            <direccion>
+                <calle>Calle Colón</calle>
+                <numero>5</numero>
+                <ciudad>Valencia</ciudad>
+                <cp>46001</cp>
+            </direccion>
+            <lineas>
+                <linea>
+                    <productoID>P03</productoID>
+                    <cantidad>2</cantidad>
+                </linea>
+            </lineas>
+        </pedido>
+
+        <pedido numero="003" estado="Entregado">
+            <fecha>2025-09-21</fecha>
+            <clienteID>C003</clienteID>
+            <direccion>
+                <calle>Gran Via</calle>
+                <numero>45</numero>
+                <ciudad>Barcelona</ciudad>
+                <cp>08010</cp>
+            </direccion>
+            <lineas>
+                <linea>
+                    <productoID>P04</productoID>
+                    <cantidad>1</cantidad>
+                </linea>
+                <linea>
+                    <productoID>P01</productoID>
+                    <cantidad>1</cantidad>
+                </linea>
+            </lineas>
+        </pedido>
+
+        <pedido numero="004" estado="En preparación">
+            <fecha>2025-09-25</fecha>
+            <clienteID>C004</clienteID>
+            <direccion>
+                <calle>Avenida de la Constitución</calle>
+                <numero>12</numero>
+                <ciudad>Sevilla</ciudad>
+                <cp>41001</cp>
+            </direccion>
+            <lineas>
+                <linea>
+                    <productoID>P05</productoID>
+                    <cantidad>1</cantidad>
+                </linea>
+                <linea>
+                    <productoID>P02</productoID>
+                    <cantidad>1</cantidad>
+                </linea>
+            </lineas>
+        </pedido>
+
+        <pedido numero="005" estado="Enviado">
+            <fecha>2025-09-28</fecha>
+            <clienteID>C005</clienteID>
+            <direccion>
+                <calle>Paseo del Prado</calle>
+                <numero>9</numero>
+                <ciudad>Madrid</ciudad>
+                <cp>28001</cp>
+            </direccion>
+            <lineas>
+                <linea>
+                    <productoID>P01</productoID>
+                    <cantidad>3</cantidad>
+                </linea>
+            </lineas>
+        </pedido>
+
+        <pedido numero="006" estado="Entregado">
+            <fecha>2025-10-01</fecha>
+            <clienteID>C006</clienteID>
+            <direccion>
+                <calle>Calle Comercio</calle>
+                <numero>18</numero>
+                <ciudad>Toledo</ciudad>
+                <cp>45001</cp>
+            </direccion>
+            <lineas>
+                <linea>
+                    <productoID>P03</productoID>
+                    <cantidad>1</cantidad>
+                </linea>
+                <linea>
+                    <productoID>P04</productoID>
+                    <cantidad>2</cantidad>
+                </linea>
+            </lineas>
+        </pedido>
+    </pedidos>
+
+    <horario>
+        <dia nombre="Lunes a Viernes">
+            <manana>10:00 - 14:00</manana>
+            <tarde>16:30 - 20:30</tarde>
+        </dia>
+
+        <dia nombre="Sábado">
+            <manana>10:00 - 14:00</manana>
+            <tarde>Cerrado</tarde>
+        </dia>
+
+        <dia nombre="Domingo">
+            <manana>Cerrado</manana>
+            <tarde>Cerrado</tarde>
+        </dia>
+    </horario>
+
+</goldproteins>
