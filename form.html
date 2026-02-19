@@ -1,175 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Gold Protein - Pedido</title>
+<head>
+  <meta charset="UTF-8">
+  <title>Gold Proteins - Pedido</title>
 
-<style type="text/css">
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eaf2fb; 
-    padding: 20px;
-}
+  <style type="text/css">
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eaf2fb;
+      margin: 0;
+      padding: 0;
+    }
 
-h1 {
-    background-color: #0d47a1; 
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-top: 0;
-}
+    /* ===== CABECERA (IGUAL EN TODAS LAS PÁGINAS) ===== */
+    #header{
+      background-color: #0d47a1;
+      color: white;
+      padding: 18px 10px;
+      text-align: center;
+      border-bottom: 4px solid #1565c0;
+    }
 
-h2, h3 {
-    color: #0d47a1; 
-    margin-bottom: 10px;
-}
+    #header h1{
+      margin: 0;
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
 
-#formulario {
-    width: 80%;
-    max-width: 900px;
-    background-color: white;
-    border: 1px solid #c5cae9;  
-    margin: 0 auto;
-    padding: 20px;
-}
+    .nav-links{
+      margin-top: 10px;
+    }
 
-label {
-    display: inline-block;
-    width: 180px;
-    margin-bottom: 8px;
-}
+    .nav-links a{
+      color: #bbdefb;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
 
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=number],
-input[type=date],
-select {
-    padding: 4px;
-    width: 250px;
-    max-width: 100%;
-}
+    .nav-links a:hover{
+      text-decoration: underline;
+    }
 
-input[type=submit],
-input[type=reset],
-input[type=button] {
-    padding: 8px 14px;
-    background-color: #0d47a1;
-    color: white;
-    border: 1px solid #0d47a1;
-    cursor: pointer;
-    margin-right: 8px;
-}
+    .aviso-envio{
+      margin-top: 10px;
+      font-size: 14px;
+      color: #bbdefb;
+    }
 
-input[type=submit]:hover,
-input[type=reset]:hover,
-input[type=button]:hover {
-    background-color: #1565c0;
-}
+    /* ===== CAJA DEL FORMULARIO ===== */
+    #formulario{
+      width: 80%;
+      max-width: 900px;
+      background-color: white;
+      border: 1px solid #c5cae9;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 6px 14px rgba(13, 71, 161, 0.10);
+    }
 
-fieldset {
-    border: 1px solid #c5cae9;
-    padding: 10px;
-    margin-bottom: 20px;
-}
+    h2{
+      color: #0d47a1;
+      margin-top: 0;
+      text-align: center;
+    }
 
-legend {
-    color: #0d47a1;
-    font-weight: bold;
-}
+    fieldset{
+      border: 1px solid #c5cae9;
+      padding: 12px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+    }
 
-</style>
+    legend{
+      color: #0d47a1;
+      font-weight: bold;
+      padding: 0 6px;
+    }
+
+    label{
+      display: inline-block;
+      width: 180px;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #263238;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=email],
+    input[type=number],
+    input[type=date],
+    select{
+      padding: 6px;
+      width: 260px;
+      max-width: 100%;
+      border: 1px solid #c5cae9;
+      border-radius: 6px;
+    }
+
+    input:focus, select:focus{
+      outline: none;
+      border-color: #1565c0;
+      background-color: #fff9c4; /* simple y “de clase” */
+    }
+
+    /* Botones */
+    .botones{
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    input[type=submit],
+    input[type=reset],
+    input[type=button]{
+      padding: 10px 16px;
+      background-color: #0d47a1;
+      color: white;
+      border: 1px solid #0d47a1;
+      cursor: pointer;
+      margin: 6px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    input[type=submit]:hover,
+    input[type=reset]:hover,
+    input[type=button]:hover{
+      background-color: #1565c0;
+      border-color: #1565c0;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>GOLD PROTEIN</h1>
+
+  <!-- CABECERA UNIFICADA -->
+  <div id="header">
+    <h1>GOLD PROTEINS</h1>
+
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="form.html">Tienda</a>
+      <a href="segundapagina.html">Contacto</a>
+    </div>
+
+    <div class="aviso-envio">Envío gratuito en pedidos superiores a 50€</div>
+  </div>
+
+  <!-- FORMULARIO -->
   <div id="formulario">
-  <h2>Formulario de pedido</h2>
+    <h2>Formulario de pedido</h2>
 
-<form action="manejador.html" method="post" enctype="multipart/form-data">
+    <form action="manejador.html" method="post" enctype="multipart/form-data">
 
-<fieldset>
-    <legend>Datos del cliente</legend>
+      <fieldset>
+        <legend>Datos del cliente</legend>
 
-    <label>Nombre:</label>
-    <input type="text" name="nombre" placeholder="Introduce tu nombre" required><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+        <br><br>
 
-    <label>Correo electrónico:</label>
-    <input type="email" name="email" placeholder="ejemplo@gmail.com"><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+        <br><br>
 
-    <label>Contraseña:</label>
-    <input type="password" name="clave" placeholder="Contraseña"><br>
-</fieldset>
-<fieldset>
-    <legend>Proteína principal</legend>
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="clave" placeholder="Contraseña" required>
+      </fieldset>
 
-    <label>Tipo de proteína:</label>
-    <select name="proteina">
-        <option value="whey">Proteína Whey (vainilla)</option>
-        <option value="choco">Proteína Whey (chocolate)</option>
-        <option value="fresa">Proteína Whey (fresa)</option>
-        <option value="vegana">Proteína Vegana (soja y guisante)</option>
-    </select><br><br>
+      <fieldset>
+        <legend>Proteína principal</legend>
 
-    <label>Tamaño del bote:</label>
-    <input type="radio" name="tamano" value="1kg"> 1 kg
-    <input type="radio" name="tamano" value="2kg"> 2 kg
-    <input type="radio" name="tamano" value="5kg"> 5 kg
-    <br><br>
+        <label for="proteina">Tipo de proteína:</label>
+        <select id="proteina" name="proteina">
+          <option value="whey">Proteína Whey (vainilla)</option>
+          <option value="choco">Proteína Whey (chocolate)</option>
+          <option value="fresa">Proteína Whey (fresa)</option>
+          <option value="vegana">Proteína Vegana (soja y guisante)</option>
+        </select>
+        <br><br>
 
-    <label>Cantidad:</label>
-    <input type="number" name="cantidad" min="1" max="10" value="1">
-</fieldset>
+        <label>Tamaño del bote:</label>
+        <input type="radio" name="tamano" value="1kg" required> 1 kg
+        <input type="radio" name="tamano" value="2kg"> 2 kg
+        <input type="radio" name="tamano" value="5kg"> 5 kg
+        <br><br>
 
-<fieldset>
-    <legend>Otros suplementos opcionales</legend>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" max="10" value="1">
+      </fieldset>
 
-    <input type="checkbox" name="extra1" value="creatina"> Creatina monohidratada<br>
-    <input type="checkbox" name="extra2" value="bcaa"> Aminoácidos BCAA<br>
-    <input type="checkbox" name="extra3" value="vitaminas"> Vitaminas deportivas<br>
-    <input type="checkbox" name="extra4" value="preentreno"> Pre-entreno energético<br>
-</fieldset>
-  
-<fieldset>
-    <legend>Datos de entrega</legend>
+      <fieldset>
+        <legend>Otros suplementos opcionales</legend>
 
-    <label>Dirección:</label>
-    <input type="text" name="direccion"><br>
+        <input type="checkbox" name="extra1" value="creatina"> Creatina monohidratada<br>
+        <input type="checkbox" name="extra2" value="bcaa"> Aminoácidos BCAA<br>
+        <input type="checkbox" name="extra3" value="vitaminas"> Vitaminas deportivas<br>
+        <input type="checkbox" name="extra4" value="preentreno"> Pre-entreno energético<br>
+      </fieldset>
 
-    <label>Código postal:</label>
-    <input type="text" name="cp" maxlength="5"><br>
+      <fieldset>
+        <legend>Datos de entrega</legend>
 
-    <label>Provincia:</label>
-    <select name="provincia">
-        <option>Madrid</option>
-        <option>Barcelona</option>
-        <option>Valencia</option>
-        <option>Sevilla</option>
-        <option>Otras...</option>
-    </select><br><br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+        <br><br>
 
-    <label>Fecha de entrega:</label>
-    <input type="date" name="fecha"><br>
+        <label for="cp">Código postal:</label>
+        <input type="text" id="cp" name="cp" maxlength="5">
+        <br><br>
 
-    <label>Descuento exclusivo:</label>
-    <input type="text" name="descuento" value="15%" readonly><br>
-</fieldset>
+        <label for="provincia">Provincia:</label>
+        <select id="provincia" name="provincia">
+          <option>Madrid</option>
+          <option>Barcelona</option>
+          <option>Valencia</option>
+          <option>Sevilla</option>
+          <option>Otras...</option>
+        </select>
+        <br><br>
 
-<fieldset>
-    <legend>Comprobante</legend>
+        <label for="fecha">Fecha de entrega:</label>
+        <input type="date" id="fecha" name="fecha">
+        <br><br>
 
-    <label>Subir comprobante:</label>
-    <input type="file" name="fichero" accept="image/*">
-</fieldset>
+        <label for="descuento">Descuento exclusivo:</label>
+        <input type="text" id="descuento" name="descuento" value="15%" readonly>
+      </fieldset>
 
-<input type="submit" value="Enviar pedido">
-<input type="reset" value="Borrar datos">
-<input type="button" value="Salir" onclick="window.close();">
+      <fieldset>
+        <legend>Comprobante</legend>
 
-</form>
+        <label for="fichero">Subir comprobante:</label>
+        <input type="file" id="fichero" name="fichero" accept="image/*">
+      </fieldset>
 
-</div>
+      <div class="botones">
+        <input type="submit" value="Enviar pedido">
+        <input type="reset" value="Borrar datos">
+        <input type="button" value="Salir" onclick="location.href='index.html';">
+      </div>
+
+    </form>
+  </div>
 
 </body>
 </html>
-
 
