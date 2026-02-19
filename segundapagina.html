@@ -2,133 +2,237 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de la empresa - Gold Proteins</title>
+
     <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        body {
+        body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #eaf2fb;   
-            line-height: 1.5;
+            background-color:#eaf2fb;
+            line-height:1.5;
+            color:#222;
         }
 
-        h1, h2, h3 {
-            color: #0d47a1;             
-            margin-bottom: 8px;
+        h2, h3{
+            color:#0d47a1;
+            margin-bottom:8px;
         }
 
-        p, li, dd, dt {
-            color: #222222;
+        p, li, dd, dt{
+            color:#222222;
         }
 
-        .bloque {
-            width: 80%;
-            max-width: 900px;
-            margin: 15px auto;
-            background-color: #ffffff;
-            border: 1px solid #c5cae9;
-            padding: 15px;
+        /* ===== BLOQUES (igual que index) ===== */
+        .bloque{
+            width:80%;
+            max-width:900px;
+            margin:15px auto;
+            background-color:#ffffff;
+            border:1px solid #c5cae9;
+            padding:15px;
+            border-radius:10px;
+            box-shadow: 0 6px 14px rgba(13, 71, 161, 0.10);
         }
 
-        #header {
-            padding: 20px 10px;
-            background-color: #0d47a1;
-            color: #ffffff;
-            border-bottom: 4px solid #1565c0;
-            background-image: url("Imagenes/footo.png"); 
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+        /* ===== MENÚ PRINCIPAL (igual que index y form) ===== */
+        .titulo-menu{
+            text-align:center;
+            margin-top:10px;
+            color:#0d47a1;
         }
 
-        h1.titulo-principal::before {
-            content: "★ ";
-        }
-        h1.titulo-principal::after {
-            content: " ★";
-        }
-
-        /* Menú sencillo dentro de la cabecera */
-        .nav-links {
-            margin-top: 8px;
+        #menu_h{
+            width:100%;
+            text-align:center;
+            margin:10px 0 15px 0;
         }
 
-        .nav-links a {
-            text-decoration: none;
-            margin-right: 12px;
-            font-weight: bold;
+        #menu_h ul{
+            list-style:none;
+            display:inline-block;
+            background:#ffffff;
+            border:1px solid #c5cae9;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow: 0 6px 14px rgba(13, 71, 161, 0.10);
         }
 
-        a:link    { color: #1565c0; }
-        a:visited { color: #4a148c; }
-        a:hover   { color: #ff6f00; }
-        a:active  { color: #b71c1c; }
-
-        ul {
-            margin-left: 20px;
+        #menu_h li{
+            display:inline;
         }
 
-        dl dt {
-            font-weight: bold;
-            margin-top: 10px;
+        #menu_h a{
+            display:inline-block;
+            padding:10px 16px;
+            text-decoration:none;
+            font-weight:bold;
+            color:#0d47a1;
+            border-right:1px solid #c5cae9;
         }
 
-        dl dd {
-            margin-left: 15px;
+        #menu_h li:last-child a{
+            border-right:none;
         }
 
-        table {
-            border-collapse: collapse;
-            width: 100%;
+        #menu_h a:hover{
+            background:#e3f2fd;
+            text-decoration:none;
         }
 
-        th, td {
-            border: 1px solid #bbdefb;
-            padding: 8px;
-            text-align: center;
+        /* ===== HEADER CON FOTO (IGUAL QUE INDEX Y FORM) ===== */
+        #header{
+            padding:20px 10px;
+            background-color:#0d47a1;
+            color:#ffffff;
+            border-bottom:4px solid #1565c0;
+
+            background-image:url("Imagenes/footo.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:right 10px center;
+
+            position:relative;
+            text-align:center;
         }
 
-        th {
-            background-color: #e3f2fd;
+        .badge-oferta{
+            position:absolute;
+            top:10px;
+            right:20px;
+            background-color: rgba(255,255,255,0.85);
+            color:#0d47a1;
+            padding:4px 10px;
+            border-radius:6px;
+            font-size:12px;
+            font-weight:bold;
         }
 
-        #footer {
-            background-color: #0d47a1;
-            color: #ffffff;
-            padding: 15px;
-            margin-top: 25px;
+        #header h1{
+            margin:0;
+            font-size:40px;
+            letter-spacing:1px;
         }
 
-        #footer a {
-            color: #bbdefb;
+        .nav-links{
+            margin-top:10px;
         }
 
-        #footer ul {
-            margin-top: 8px;
-            margin-left: 20px;
+        .nav-links a{
+            text-decoration:none;
+            margin:0 8px;
+            font-weight:bold;
+            color:#bbdefb;
         }
 
-        #footer ul li a {
-            display: block;
-            padding: 4px 0;
+        .nav-links a:hover{
+            text-decoration:underline;
+        }
+
+        .aviso-envio{
+            margin-top:8px;
+            font-size:14px;
+            color:#bbdefb;
+        }
+
+        /* Listas y DL */
+        ul{
+            margin-left:20px;
+        }
+
+        dl dt{
+            font-weight:bold;
+            margin-top:10px;
+        }
+
+        dl dd{
+            margin-left:15px;
+        }
+
+        /* Tablas */
+        table{
+            border-collapse:collapse;
+            width:100%;
+        }
+
+        th, td{
+            border:1px solid #bbdefb;
+            padding:8px;
+            text-align:center;
+        }
+
+        th{
+            background-color:#e3f2fd;
+        }
+
+        /* Links */
+        a:link    { color:#1565c0; }
+        a:visited { color:#4a148c; }
+        a:hover   { color:#ff6f00; }
+        a:active  { color:#b71c1c; }
+
+        /* Footer */
+        #footer{
+            background-color:#0d47a1;
+            color:#ffffff;
+            padding:15px;
+            margin-top:25px;
+        }
+
+        #footer a{
+            color:#bbdefb;
+        }
+
+        #footer ul{
+            margin-top:8px;
+            margin-left:20px;
+        }
+
+        #footer ul li a{
+            display:block;
+            padding:4px 0;
+        }
+
+        /* Responsive simple */
+        @media (max-width:650px){
+            #header h1{ font-size:30px; }
+            .bloque{ width:90%; }
         }
     </style>
 </head>
 
 <body>
-    <a name="inicio"></a>
 
+    <a id="inicio"></a>
+
+    <h2 class="titulo-menu">Menú Principal</h2>
+
+    <div id="menu_h">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="form.html">Tienda</a></li>
+            <li><a href="segundapagina.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- HEADER IGUAL AL INDEX Y FORM -->
     <div id="header">
-        <h1 class="titulo-principal">GOLD PROTEINS</h1>
+        <span class="badge-oferta">ENVÍO 24H</span>
+
+        <h1><strong>GOLD PROTEINS</strong></h1>
+
         <p class="nav-links">
-            <a href="index.html">Página principal</a>
             <a href="#empresa">La empresa</a>
             <a href="#objetivos">Objetivos</a>
             <a href="#contacto">Contacto</a>
         </p>
+
+        <p class="aviso-envio">Envío gratuito en pedidos superiores a 50€</p>
     </div>
 
     <div class="bloque" id="empresa">
@@ -150,7 +254,7 @@
             <li>Envíos rápidos dentro de la península.</li>
         </ul>
     </div>
-  
+
     <div class="bloque" id="objetivos">
         <h2>Nuestros objetivos</h2>
         <p>
@@ -168,6 +272,7 @@
             <dd>Complementar la alimentación, nunca sustituirla, y animar a mantener una vida activa.</dd>
         </dl>
     </div>
+
     <div class="bloque">
         <h2>Horario y ubicación</h2>
         <p>Nos puedes encontrar en nuestra tienda física en Madrid (zona Vallecas).</p>
@@ -212,7 +317,7 @@
     </div>
 
     <div id="footer">
-        <div class="bloque" style="background-color: transparent; border: none; color: inherit;">
+        <div class="bloque" style="background-color: transparent; border: none; color: inherit; box-shadow:none;">
             <h3>Gold Proteins &copy; 2025</h3>
             <ul>
                 <li><a href="index.html">Tienda y suplementos</a></li>
@@ -223,4 +328,3 @@
 
 </body>
 </html>
-
